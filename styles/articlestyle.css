@@ -1,68 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root{
+    --greenish-color: #04AA6D;
+}
 
 #article{
-   /* background-image: url(multimedia/images/background4.jpg);
-    background-size:auto;
-    background-attachment: fixed;*/
-    
+    font-family: "Poppins", sans-serif;
 }
-.article-video {
-    position: absolute;
-  /*  top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;*/
-    z-index: -10;
-    object-fit: cover;
-    filter: brightness(40%);
-  }
+
+/*KNOWLEDGE*/
 .knowledge{
-    position:relative;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 1);
 }
 #nombre {
     text-align: center;
     font-size: 50px;
-    font-family: "Poppins", sans-serif;
-    color: rgb(0, 0, 0);
-    padding: 5vh 5vh 5vh;
+    padding: 8vh 5vh 5vh;
 }
-.flex_container{
-    display: flex;
-}
-.perfil{
+.about-me{
     display: flex;
     flex-direction: column;
-    width:30%;
-    margin: 0 5% 5vh;
-    border: 5px solid grey;
-    border-radius: 15px;
+}
+.perfil{
+    align-self: center;
+    width:60%;
+    margin: 0 5% 0;
     padding: 5vh;
 }
-#imagenperfil{
-    align-self: center;
-    width:70%;
-    border-radius: 15px;
-    margin-bottom: 4vh;
-}
+
 .perfil h2{
     text-align: justify;
 }
+
+/*ICONS*/
 .icons{
     align-self: center;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     width:60%;
-    margin: 5vh 15vh 5vh;
-    padding: 5vh;
+    margin-bottom: 10vh;
+
 
 }
-.iconify{
+.icon-box{
     width: 25%;
+    margin-bottom: 5vh;
+}
+
+.icons .iconify{
+    color: var(--greenish-color);
     font-size: 10vh;
-    margin-bottom: 12vh;
 }
 
 
