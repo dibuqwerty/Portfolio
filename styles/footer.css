@@ -1,3 +1,5 @@
 #footer{
-    background-image: url(../multimedia/images/footer-background.jpg);
+    background-image: url(../multimedia/images/footer2.jpg) fixed;
+    background-size: auto;
+ /*  padding-bottom: 50vh;*/
 }
