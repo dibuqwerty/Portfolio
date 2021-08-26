@@ -1,5 +1,6 @@
 #footer{
-    background-image: url(../multimedia/images/footer2.jpg) fixed;
+    color: white;
+    background-image: url(../multimedia/images/footer2.jpg);
     background-size: auto;
  /*  padding-bottom: 50vh;*/
 }
