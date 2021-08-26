@@ -4,13 +4,15 @@
 }
 
 #article{
-
+    background-image: url(../multimedia/images/background4.jpg);
+    background-size:auto;
+    background-attachment: fixed;
 }
 
 /*KNOWLEDGE*/
 .knowledge{
     color: rgb(0, 0, 0);
-    /*background-color: rgba(255, 255, 255, 1);*/
+    background-color: rgba(255, 255, 255, 1);
 }
 #nombre {
     text-align: center;
@@ -30,6 +32,7 @@
 
 .perfil h2{
     text-align: justify;
+    margin-bottom: 5vh;
 }
 
 /*ICONS*/
@@ -39,9 +42,7 @@
     flex-wrap: wrap;
     text-align: center;
     width:60%;
-    margin-bottom: 10vh;
-
-
+    margin-bottom: 18vh;
 }
 .icon-box{
     width: 25%;
@@ -57,13 +58,11 @@
 /*PROYECTOS*/
 
 .projects{
-    background-image: url(multimedia/images/background4.jpg);
-    background-size:auto;
-    background-attachment: fixed;
    /* z-index: 10;*/
+   color: white;
     display: flex;
     flex-direction: column;
-    /*background-color: white;*/
+    background-color: grey;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -87,7 +86,11 @@
     flex-direction: row;
 }
 
+/*CERTIFICADOS*/
 
+.certificates{
+    background-color: white;
+}
 
 /*
 @media only screen and (min-device-width: 1000px){
