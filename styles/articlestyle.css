@@ -72,7 +72,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
 .project-title{
     text-align: center;
     font-size: 50px;
-    padding: 3vh 0 3vh;
+    padding: 3vh 0 5vh;
     align-self: center;
 }
 
@@ -87,10 +87,15 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
     width: 75vh;
     margin: 0 2vh 0;
 }
-.project-img .iconify{
+.project-img a{
     font-size: 10vh;
     align-self: center;
 }
+.project-img a:hover{
+    color: black;
+    cursor: pointer;
+}
+
 .project-menu{
     display: flex;
     align-self: center;
@@ -98,14 +103,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
     margin-bottom: 6vh;
 }
 .project-menu .iconify{
-    font-size: 8vh;
+    align-self: center;
+    font-size: 5vh;
     padding: 0 2vh 0;
 }
 .project-menu .iconify:hover{
     font-size: 10vh;
     color: black;
+    cursor: pointer;
 }
-
+.pro-active{
+    color: black;
+}
 
 /*CERTIFICADOS*/
 
