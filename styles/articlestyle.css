@@ -200,7 +200,7 @@ box-shadow:yellow;
     }
     to {
       stroke: grey;
-      stroke-width: 20;
+      stroke-width: 25;
       stroke-dasharray: 90 0;
       stroke-dashoffset: 0;
     }
