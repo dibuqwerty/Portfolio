@@ -1,6 +1,10 @@
 #footer{
     color: white;
-    background-image: url(../multimedia/images/footer2.jpg);
-    background-size: auto;
- /*  padding-bottom: 50vh;*/
+   text-align: center;
+    background-image: url(../multimedia/images/Footer3.jpg) ;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+#footer  h3{
+    padding-bottom: 500px;
 }
