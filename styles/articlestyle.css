@@ -146,13 +146,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
     width: 35vh;
 }
 
-.img-box :hover{
-box-shadow:yellow;
-}
-
-
 .img-box > a {
-   /* position: absolute;*/
    display: flex;
    flex-direction: column;
     height: 50vh;
@@ -163,32 +157,20 @@ box-shadow:yellow;
     transition: all 0.5s ease;
     justify-content: center;
     align-items: center;
-    
-  /*  animation: stroke 3s infinite;*/
   }
   
   .img-box > a > svg,
   .img-box > a > svg > rect {
     position: absolute;
-  /*  top: 0;
-    left: 0;*/
-    width: 430px;
-    height: 430px;
+    width: 35vh;
+    height: 500px;
     fill: transparent;
-   /* z-index: -1;*/
   }
   
   .img-box > a:hover > svg > rect {
     transition: all 0.3s ease;
-    transition-delay: 1.5s;
-    animation: strokeHover 1.5s normal both;
-  /*  fill: grey;*/
-  }
-  
-  .img-box > a:hover {
-    transition: all 0.3s ease;
-    transition-delay: 1.5s;
-  /*  color: white;*/
+    transition-delay: 0.5s;
+    animation: strokeHover 0.5s normal both;
   }
 
   @keyframes strokeHover {
