@@ -148,6 +148,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
 
 .img-box > a {
    display: flex;
+   flex-wrap: wrap;
    flex-direction: column;
     height: 50vh;
     width: 44vh;
@@ -162,8 +163,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
   .img-box > a > svg,
   .img-box > a > svg > rect {
     position: absolute;
-    width: 35vh;
-    height: 500px;
+    width: 49vh;
+    height: 55vh;
     fill: transparent;
   }
   
