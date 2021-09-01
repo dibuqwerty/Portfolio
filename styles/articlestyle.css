@@ -61,7 +61,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
 /*PROYECTOS*/
 .carousel-inner img {
     width: 100%;
-    height: 10%;
+    height: 40vh;
   }
 
 .cad{
@@ -178,21 +178,21 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
   
   .img-box > a:hover > svg > rect {
     transition: all 0.3s ease;
-    transition-delay: 0.5s;
-    animation: strokeHover 0.5s normal both;
+    transition-delay: 1.5s;
+    animation: strokeHover 1.5s normal both;
   }
 
   @keyframes strokeHover {
     from {
       stroke: grey;
       stroke-width: 5;
-      stroke-dasharray: 20 70;
-      stroke-dashoffset: 50;
+      stroke-dasharray: 0 104vh;
+      /*stroke-dashoffset: 50;*/
     }
     to {
       stroke: grey;
       stroke-width: 25;
-      stroke-dasharray: 90 0;
+      stroke-dasharray: 104vh 0;
       stroke-dashoffset: 0;
     }
   }
