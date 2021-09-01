@@ -12,8 +12,8 @@ document.getElementById('icon-cad').addEventListener("click", ()=>{
  
 });
 
-//ASIDE NAV
-window.onscroll = () => {
+//ASIDE NAV/
+/*window.onscroll = () => {
     let scroll = document.documentElement.scrollTop;
     if (scroll > 400) {
       document.getElementById("show-nav").style.transform = "scale(1)";
@@ -36,11 +36,11 @@ document.querySelector(".show-menu").addEventListener("click", () => {
   
     //LOADER ANIMATION
    /* document.getElementById("loading").style.opacity = "0";
-    document.getElementById("loading").style.visibility = "hidden";*/
+    document.getElementById("loading").style.visibility = "hidden";
     document.body.style.overflowY = "auto";
     window.scrollTo(0, 0);
   };
-
+*/
 ScrollReveal().reveal('.knowledge h1', {delay: 500});
 ScrollReveal().reveal('.about-me', {delay: 500});
 ScrollReveal().reveal('.icon-box', { interval: 200, reset: true });

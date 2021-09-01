@@ -1,13 +1,13 @@
 
-.dropdown .iconify{
+.dropdwn .iconify{
     width:6vh;
     height: 6vh;
 }
-  /*
-  .dropdown {
-   position: absolute;
-    bottom: -49rem;
-    right: 8rem;
+  
+  .dropdwn {
+   position: fixed;
+    bottom: 2rem;
+    right: 2rem;
     display:flex;
     flex-direction: column-reverse;
     z-index: 100;
@@ -44,22 +44,22 @@
 
   .dropdown-content a:hover {background-color: black}
   
-  .dropdown:hover .dropdown-content {
+  .dropdwn:hover .dropdown-content {
     display: block;
  
   }
-  .dropdown:hover .dropbtn {
+  .dropdwn:hover .dropbtn {
     border-top-left-radius:0 ;
     border-top-right-radius:0 ;
   }  
-  .dropdown:hover .dropbtn .iconify{
+  .dropdwn:hover .dropbtn .iconify{
     transform: rotate(135deg);
   }  
 
-*/
 
 
-  /*PRUEBA*/
+
+  /*PRUEBA*
   :root {
     --svg-width-height: 25px;
     --white-color: #f2f2f2;
@@ -70,7 +70,7 @@
   }
   
   .navbar {
-    position:absolute;
+    position:fixed;
     bottom: 5em;
     right: 5em;
     text-align: right;
