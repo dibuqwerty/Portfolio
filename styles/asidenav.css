@@ -70,11 +70,11 @@
   }
   
   .navbar {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
+    position:absolute;
+    bottom: 5em;
+    right: 5em;
     text-align: right;
-    z-index: 30;
+    z-index: 99;
     transition: transform 500ms ease;
     transform-origin: bottom right;
   }
