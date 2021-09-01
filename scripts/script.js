@@ -4,12 +4,17 @@ function myFunction(){
 function ventana(){
     window.alert("ah te la creiste")
 }
-document.getElementById('pro-left').addEventListener("click", function change(){
+
+document.getElementById('icon-cad').addEventListener("click", ()=>{
     console.log('click');
-    document.getElementById("project-img").src = "multimedia/images/projects/project2.jpeg";
+    document.getElementsByClassName("cad").style.visibility='visible' ;
+    document.getElementsByClassName("web").style.visibility='hidden';
+ 
 });
 
-document.getElementById('pro-right').addEventListener("click", function change(){
-    console.log('click2');
-    document.getElementById("project-img").src = "multimedia/images/projects/project3.jpeg";
-});
+
+ScrollReveal().reveal('.knowledge h1', {delay: 500});
+ScrollReveal().reveal('.about-me', {delay: 500});
+ScrollReveal().reveal('.icon-box', { interval: 200, reset: true });
+ScrollReveal().reveal('.projects', {delay: 500});
+ScrollReveal().reveal('.certificates', {delay: 500});
