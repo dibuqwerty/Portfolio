@@ -24,30 +24,30 @@ window.onscroll = () => {
 };
 //Aparición de las opciones//
 
-document.querySelector(".dropbtn-box").addEventListener("mouseover", () => {
+document.querySelector(".dropbtn").addEventListener("mouseover", () => {
   document.getElementById("span").style.transform = "scaleY(1)";
   document.getElementById("drop-icon").style.transform = "rotate(135deg)";
-  document.querySelector(".dropbtn").style.animation = "corner 0.2s normal both";
+  document.querySelector(".dropbtn").style.animation = "corner 0.15s normal both";
 });
 document.querySelector(".dropdown-content").addEventListener("mouseover", () => {
   document.getElementById("span").style.transform = "scaleY(1)";
   document.getElementById("drop-icon").style.transform = "rotate(135deg)";
-  document.querySelector(".dropbtn").style.animation = "corner 0.2s normal both";
+  document.querySelector(".dropbtn").style.animation = "corner 0.15s normal both";
 });
 document.querySelector(".dropdown-content").addEventListener("mouseout", () => {
   document.getElementById("span").style.transform = "scaleY(0)";
   document.getElementById("drop-icon").style.transform = "rotate(0deg)";
-  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.2s normal 0.4s both";
+  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.15s normal 0.3s both";
 });
-document.querySelector(".dropbtn-box").addEventListener("mouseout", () => {
+document.querySelector(".dropbtn").addEventListener("mouseout", () => {
   document.getElementById("span").style.transform = "scaleY(0)";
   document.getElementById("drop-icon").style.transform = "rotate(0deg)";
-  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.2s normal 0.4s both";
+  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.15s normal 0.3s both";
 });
   
 
-  window.onload = () => {
-    // SHOW MENU
+window.onload = () => {
+    // SHOW ASIDE NAV
     document.getElementsByid("dropdwn").style.transform = "scale(0)";
   
     //LOADER ANIMATION
@@ -55,7 +55,9 @@ document.querySelector(".dropbtn-box").addEventListener("mouseout", () => {
     document.getElementById("loading").style.visibility = "hidden";*/
     document.body.style.overflowY = "auto";
     window.scrollTo(0, 0);
-  };
+};
+
+
 
 ScrollReveal().reveal('.knowledge h1', {delay: 500});
 ScrollReveal().reveal('.about-me', {delay: 500});

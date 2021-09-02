@@ -5,15 +5,15 @@
 }
   
 .dropdwn {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    position: fixed;                            /*Para que siempre este en el mismo lugar*/
+    bottom: 2rem;                               /*Posicionamiento en pantalla*/
+    right: 2rem;                                /*Posicionamiento en pantalla*/
     display:flex;
     flex-direction: column-reverse;
     z-index: 100;
-    transform: scale(0);                    /*Para que inicie escondido*/
-    transition: transform 500ms ease;       /*Animacion para que aparezca*/
-    transform-origin: bottom right;         /*Desde dónde aparece*/
+    transform: scale(0);                        /*Para que inicie escondido*/
+    transition: transform 500ms ease;           /*Animacion para que aparezca*/
+    transform-origin: bottom right;             /*Desde dónde aparece*/
 }
 
 .dropbtn {
@@ -24,16 +24,17 @@
     border-radius: 50%;
 }
 .dropbtn .iconify{
-    transition: transform 0.3s ease-in-out; /*Animacion de giro del + */
+    transition: transform 0.3s ease-in-out;     /*Animacion de giro del + */
 }
+
 .dropdown-content {
     background-color: #04AA6D;
     z-index: 99;
     border-top-left-radius:5vh;
     border-top-right-radius:5vh;
     transform: scaleY(0);
-    transition: transform 0.2s ease-out;
-    transition-delay: 0.2s;
+    transition: transform 0.15s ease-out;
+    transition-delay: 0.15s;
     transform-origin: bottom;
   }
   .dropdown-content a:first-child {
@@ -47,10 +48,9 @@
     display: block;
   }
 
-
   .dropdown-content a:hover {background-color: black}
 
-
+/*Animacion de los bordes del +x */
 @keyframes corner {
   0%{
     border-top-left-radius:50% ;
