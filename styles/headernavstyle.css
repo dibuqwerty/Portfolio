@@ -14,11 +14,11 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     position: relative;
     font-size: 50px;
-   /* text-shadow: 2px 2px 5px gray;*/
   } 
+
 .video {
     position: absolute;
     top: 0;
@@ -28,20 +28,68 @@ html{
     z-index: -1;
     object-fit: cover;
     filter: brightness(40%);
+}
+.dyn-text{
+  text-align: center;
+  margin-left: 5px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dyn-text li{
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;         /*STEPS tiene el nro max de palabras*/
+}
+@keyframes slide {
+  100%{
+    top: -360px;
   }
+}
 
-  header h1{
-      animation: aparition 5s;
+.dyn-text li span{
+  position: relative;
+}
+.dyn-text li span::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid black;
+  animation: typing 3s steps(10) infinite;          /*STEPS tiene el nro max de letras de una palabra*/
+}
+@keyframes typing {
+  33%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
   }
-  header p{
-    animation: aparition 8s;
+  66%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+  100%{
+    left: 0;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+header h1{
+      animation: aparition 5s;
   }
 
   @keyframes aparition {
     from {color: transparent;}
-    to {color: white;}
-  }
+    to {color: black;}
+}
   
+
+
+
 /*--------Flecha-------------*/
 
   .scrollDown{
@@ -99,7 +147,9 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    background-color: rgb(41, 41, 41);
+  text-decoration: none;
+  color: white;
+  background-color: rgb(41, 41, 41);
 }
 
 .nav_active {
