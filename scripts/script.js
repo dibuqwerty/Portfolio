@@ -1,28 +1,49 @@
-function myFunction(){
-    document.getElementById('demo').innerHTML = Date();
-}
-function ventana(){
-    window.alert("ah te la creiste")
-}
 
-document.getElementById('icon-cad').addEventListener("click", ()=>{
-    console.log('click');
-    document.getElementsByClassName("cad").style.visibility='visible' ;
-    document.getElementsByClassName("web").style.visibility='hidden';
- 
-});
 
 //PROJECT GALLERY MENU//
 
+var cont = document.querySelector(".img-cont");
+var cont2 = document.querySelector(".img-cont2");
+var web = document.getElementById("web-box");
+var print = document.getElementById("3d-box");
+var allmenu = document.querySelector(".project-menu .icon-box");
 
+web.addEventListener("click", () =>{
 
-document.getElementById("gallery-web").addEventListener("click", () =>{
-  document.querySelector(".img-cont").style.display = "flex";
-  document.querySelector(".img-cont2").style.display = "none";
+  cont2.style.transform = "scale(0)";
+  setTimeout(() => {
+    cont2.style.display = "none";
+  }, 1000);
+  cont.style.display = "flex";
+  setTimeout(() => {
+    cont.style.transform = "scale(1)";
+  }, 1000); 
+
+  console.log('clicked');
+  web.className= "pro-active";
+  print.className= "pro";
+  
+  console.log(web);
+  console.log(print);
+
 })
-document.getElementById("gallery-3d").addEventListener("click", () =>{
-  document.querySelector(".img-cont").style.display = "none";
-  document.querySelector(".img-cont2").style.display = "flex";
+
+print.addEventListener("click", () =>{
+
+  cont.style.transform = "scale(0)";
+  setTimeout(() => {
+    cont.style.display = "none";
+  }, 1000);
+  cont2.style.display = "flex";
+  setTimeout(() => {
+    cont2.style.transform = "scale(1)";
+  }, 1000); 
+ 
+
+  web.className= "pro";
+  print.className= "pro-active"; 
+  console.log(web);
+  console.log(print);
 })
 
 
@@ -68,7 +89,7 @@ document.querySelector(".dropbtn").addEventListener("mouseout", () => {
 
 window.onload = () => {
     // SHOW ASIDE NAV
-    document.getElementsByid("dropdwn").style.transform = "scale(0)";
+    document.getElementById("dropdwn").style.transform = "scale(0)";
   
     //LOADER ANIMATION
    /* document.getElementById("loading").style.opacity = "0";
@@ -92,11 +113,11 @@ var typed = new Typed(".typing", {
 //knowledge
 ScrollReveal().reveal('.knowledge h1', {delay: 500, reset: true});
 ScrollReveal().reveal('.knowledge h2', {delay: 500, reset: true});
-ScrollReveal().reveal('.icon-box', { interval: 200, reset: true });
+ScrollReveal().reveal('.about-me .icons .icon-box', { interval: 200, reset: true });
 //projects
-ScrollReveal().reveal('.project-title', {delay: 500, reset: true});
-ScrollReveal().reveal('.carousel slide web', {delay: 500, reset: true});
-ScrollReveal().reveal('.pro-active', {delay: 500, reset: true});
-ScrollReveal().reveal('.pro', {delay: 500, reset: true});
+ScrollReveal().reveal('.project-title', {delay: 500});
+ScrollReveal().reveal('.pro-active', {delay: 500});
+ScrollReveal().reveal('.pro', {interval: 300});
+ScrollReveal().reveal('.img-cont .img-box', {interval: 400, reset: true });
 //certificates
 ScrollReveal().reveal('.certificates', {delay: 500});

@@ -84,12 +84,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
     width: auto;
 }
 .img-cont{
-    display: none;
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 1s ease;
+    display: flex;
     flex-wrap: wrap;
 }
 
 
 .img-cont2{
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 1s ease;
     display: none;
     flex-wrap: wrap;
 }
@@ -165,25 +171,34 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
     display: flex;
     align-self: center;
     flex-direction: row;
+    margin-bottom: 5vh;
 }
 .project-menu .icon-box{
     height:10vh ;
 }
 .project-menu .iconify{
     font-size: 5vh;
-    padding: 0 2.5vh 0;
+    margin: 0 2.5vh 0;
 }
 .project-menu .iconify:hover{
-    font-size: 10vh;
     color: black;
     cursor: pointer;
-    padding: 0 0vh 0;
+}
+.pro .iconify:hover{
+    transform: scale(2);
+    transition: transform 0.3s ease-out;
 }
 .pro-active .iconify{
     color: black;
-    font-size: 10vh;
-    padding: 0;
+    transform: scale(2);
 }
+
+@keyframes aparitionimg {
+    100%{
+        display:none;
+    }
+}
+
 
 /*CERTIFICADOS*/
 

@@ -29,56 +29,7 @@ html{
     object-fit: cover;
     filter: brightness(40%);
 }
-/*
-.dyn-text{
-  text-align: center;
-  margin-left: 5px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-.dyn-text li{
-  list-style: none;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;        
-}
-@keyframes slide {
-  100%{
-    top: -360px;
-  }
-}
 
-.dyn-text li span{
-  position: relative;
-}
-.dyn-text li span::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: white;
-  border-left: 2px solid black;
-  animation: typing 3s steps(10) infinite;          
-}
-@keyframes typing {
-  33%{
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-  66%{
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-  100%{
-    left: 0;
-    margin: 0 -35px 0 35px;
-  }
-}
-*/
 header h1{
       animation: aparition 5s;
 }
