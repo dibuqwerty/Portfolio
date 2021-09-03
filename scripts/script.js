@@ -12,6 +12,26 @@ document.getElementById('icon-cad').addEventListener("click", ()=>{
  
 });
 
+//PROJECT GALLERY MENU//
+
+
+
+document.getElementById("gallery-web").addEventListener("click", () =>{
+  document.querySelector(".img-cont").style.display = "flex";
+  document.querySelector(".img-cont2").style.display = "none";
+})
+document.getElementById("gallery-3d").addEventListener("click", () =>{
+  document.querySelector(".img-cont").style.display = "none";
+  document.querySelector(".img-cont2").style.display = "flex";
+})
+
+
+
+
+
+
+
+
 //ASIDE NAV ANIMATIONS//
 window.onscroll = () => {
     let scroll = document.documentElement.scrollTop;
@@ -57,6 +77,9 @@ window.onload = () => {
     window.scrollTo(0, 0);
 };
 
+
+
+//COVER TYPE
 var typed = new Typed(".typing", {
   strings: ["Programmer", "Designer", "Developer", "Engineer","Musician"],
   typeSpeed: 100,
