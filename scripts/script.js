@@ -13,13 +13,13 @@ web.addEventListener("click", () =>{
   cont2.style.transform = "scale(0)";
   setTimeout(() => {
     cont2.style.display = "none";
-  }, 1000);
+  }, 400);
   setTimeout(() => {
   cont.style.display = "flex";
-  }, 1000);
+  }, 400);
   setTimeout(() => {
     cont.style.transform = "scale(1)";
-  }, 1200); 
+  }, 500); 
 
   console.log('clicked');
   web.className= "pro-active";
@@ -35,13 +35,13 @@ print.addEventListener("click", () =>{
   cont.style.transform = "scale(0)";
   setTimeout(() => {
     cont.style.display = "none";
-  }, 1000);
+  }, 400);
   setTimeout(() => {
   cont2.style.display = "flex";
-}, 1000);
+}, 400);
   setTimeout(() => {
     cont2.style.transform = "scale(1)";
-  }, 1200); 
+  }, 500); 
  
 
   web.className= "pro";
@@ -99,7 +99,7 @@ window.onload = () => {
    /* document.getElementById("loading").style.opacity = "0";
     document.getElementById("loading").style.visibility = "hidden";*/
     document.body.style.overflowY = "auto";
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
 };
 
 
@@ -124,4 +124,4 @@ ScrollReveal().reveal('.pro-active', {delay: 500});
 ScrollReveal().reveal('.pro', {interval: 300});
 ScrollReveal().reveal('.img-cont .img-box', {interval: 400, reset: true });
 //certificates
-ScrollReveal().reveal('.certificates', {delay: 500});
+//ScrollReveal().reveal('.certificates', {delay: 500});

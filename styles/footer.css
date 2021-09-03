@@ -1,8 +1,7 @@
 #footer{
     color: white;
    text-align: center;
-    background-image: url(../multimedia/images/Footer3.jpg) ;
-    background-size: cover;
+    background: var(--blackish-color);
     filter: grayscale(100%);
 }
 #footer  h3{

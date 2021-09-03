@@ -17,7 +17,7 @@
 }
 
 .dropbtn {
-    background-color: black;
+    background-color: var(--blackish-color);
     color: white;
     padding: 2vh;
     display: inline-block;
@@ -48,7 +48,7 @@
     display: block;
   }
 
-  .dropdown-content a:hover {background-color: black}
+  .dropdown-content a:hover {background-color: var(--blackish-color)}
 
 /*Animacion de los bordes del +x */
 @keyframes corner {

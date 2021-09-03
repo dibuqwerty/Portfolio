@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
 }
+:root{
+  --greenish-color: #04AA6D;
+  --blackish-color: #232427;
+}
+
 html{
     font: Lucida Console, monospace;
     scroll-behavior: smooth;
@@ -27,7 +32,7 @@ html{
     height: 100%;
     z-index: -1;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(20%);
 }
 
 header h1{
@@ -81,7 +86,7 @@ nav{
 nav ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: grey;
+    background-color: var(--blackish-color);
     width: 100%;
 
 
@@ -101,9 +106,9 @@ nav ul li a {
 nav ul li a:hover{
   text-decoration: none;
   color: white;
-  background-color: rgb(41, 41, 41);
+  background-color: var(--greenish-color);
 }
 
 .nav_active {
-    background-color: #04AA6D;
+    background-color: var(--greenish-color);
 } 
