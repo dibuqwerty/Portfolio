@@ -68,7 +68,7 @@ var typed = new Typed(".typing", {
 //SCROLLREVEAL
 //knowledge
 ScrollReveal().reveal('.knowledge h1', {delay: 500, reset: true});
-ScrollReveal().reveal('.about-me', {delay: 500, reset: true});
+ScrollReveal().reveal('.knowledge h2', {delay: 500, reset: true});
 ScrollReveal().reveal('.icon-box', { interval: 200, reset: true });
 //projects
 ScrollReveal().reveal('.project-title', {delay: 500, reset: true});
