@@ -14,10 +14,12 @@ web.addEventListener("click", () =>{
   setTimeout(() => {
     cont2.style.display = "none";
   }, 1000);
+  setTimeout(() => {
   cont.style.display = "flex";
+  }, 1000);
   setTimeout(() => {
     cont.style.transform = "scale(1)";
-  }, 1000); 
+  }, 1200); 
 
   console.log('clicked');
   web.className= "pro-active";
@@ -34,10 +36,12 @@ print.addEventListener("click", () =>{
   setTimeout(() => {
     cont.style.display = "none";
   }, 1000);
+  setTimeout(() => {
   cont2.style.display = "flex";
+}, 1000);
   setTimeout(() => {
     cont2.style.transform = "scale(1)";
-  }, 1000); 
+  }, 1200); 
  
 
   web.className= "pro";
