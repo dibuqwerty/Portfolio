@@ -57,10 +57,23 @@ window.onload = () => {
     window.scrollTo(0, 0);
 };
 
+var typed = new Typed(".typing", {
+  strings: ["Programmer", "Designer", "Developer", "Engineer","Musician"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
 
 
-ScrollReveal().reveal('.knowledge h1', {delay: 500});
-ScrollReveal().reveal('.about-me', {delay: 500});
+//SCROLLREVEAL
+//knowledge
+ScrollReveal().reveal('.knowledge h1', {delay: 500, reset: true});
+ScrollReveal().reveal('.about-me', {delay: 500, reset: true});
 ScrollReveal().reveal('.icon-box', { interval: 200, reset: true });
-ScrollReveal().reveal('.projects', {delay: 500});
+//projects
+ScrollReveal().reveal('.project-title', {delay: 500, reset: true});
+ScrollReveal().reveal('.carousel slide web', {delay: 500, reset: true});
+ScrollReveal().reveal('.pro-active', {delay: 500, reset: true});
+ScrollReveal().reveal('.pro', {delay: 500, reset: true});
+//certificates
 ScrollReveal().reveal('.certificates', {delay: 500});
