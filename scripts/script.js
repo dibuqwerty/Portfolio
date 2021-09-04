@@ -1,5 +1,32 @@
 
 
+
+//COVER
+
+const topmenu = document.getElementById("top-nav-menu");
+const topoptions = document.getElementById("top-nav-options");
+var navstatus = 0;
+
+topmenu.addEventListener("click", () =>{
+  if (navstatus ==0 ){
+  topoptions.style.display = "flex";
+  setTimeout(() => {
+    topoptions.style.transform = "scaleY(1)";
+  }, 150); 
+  navstatus=1;
+  }
+  else{
+    topoptions.style.transform = "scaleY(0)";
+    setTimeout(() => {
+      topoptions.style.display = "none";
+    }, 150);
+    navstatus = 0;
+  }
+})
+
+
+
+
 //PROJECT GALLERY MENU//
 
 var cont = document.querySelector(".img-cont");

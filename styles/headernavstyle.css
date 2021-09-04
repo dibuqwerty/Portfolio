@@ -21,9 +21,8 @@ html{
     justify-content: center;
     color: white;
     position: relative;
-    font-size: 2.5em;
     text-align: center;
-    /*font-size: 50px;*/
+    font-size: 50px;
   } 
 
 .video {
@@ -90,12 +89,12 @@ nav ul {
     overflow: hidden;
     background-color: var(--blackish-color);
     width: 100%;
-
-
 }
+
 nav ul li{
     float: left;
 }
+#top-nav-menu,
 nav ul li a {
     display: block;
     color: rgb(255, 255, 255);
@@ -104,7 +103,7 @@ nav ul li a {
     padding: 3.5vh 5vh;
     font-size: 3vh;
 }
-
+#top-nav-menu:hover,
 nav ul li a:hover{
   text-decoration: none;
   color: white;
@@ -114,3 +113,30 @@ nav ul li a:hover{
 .nav_active {
     background-color: var(--greenish-color);
 } 
+
+/*Hidden menu*/
+#top-nav-menu{
+  display: none;
+}
+
+
+@media only screen and (max-device-width: 750px){
+
+  .cover{
+    font-size: 30px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+}
+#top-nav-options{
+  display: none;
+  transform: scaleY(0);
+  transition: transform 0.15s ease-out;
+  transform-origin: top;
+}
+#top-nav-menu{
+  padding: 3.5vh 0 3.5vh;
+  display: flex;
+}
+}
