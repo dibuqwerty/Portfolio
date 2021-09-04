@@ -12,14 +12,14 @@ topmenu.addEventListener("click", () =>{
   topoptions.style.display = "flex";
   setTimeout(() => {
     topoptions.style.transform = "scaleY(1)";
-  }, 150); 
+  }, 50); 
   navstatus=1;
   }
   else{
     topoptions.style.transform = "scaleY(0)";
     setTimeout(() => {
       topoptions.style.display = "none";
-    }, 150);
+    }, 100);
     navstatus = 0;
   }
 })
@@ -142,8 +142,8 @@ var typed = new Typed(".typing", {
 
 //SCROLLREVEAL
 //knowledge
-ScrollReveal().reveal('.knowledge h1', {delay: 500, reset: true});
-ScrollReveal().reveal('.knowledge h2', {delay: 500, reset: true});
+ScrollReveal().reveal('.knowledge h1', {delay: 500});
+ScrollReveal().reveal('.knowledge h2', {delay: 500});
 ScrollReveal().reveal('.about-me .icons .icon-box', { interval: 200, reset: true });
 //projects
 ScrollReveal().reveal('.project-title', {delay: 500});

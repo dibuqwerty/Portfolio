@@ -47,13 +47,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
     margin-bottom: 18vh;
 }
 .about-me .icons .icon-box{
-    width: 10rem;
+    width: 20vh;
     margin-bottom: 5vh;
 }
 
 .icons .iconify{
     color: var(--greenish-color);
-    font-size: 3rem;
+    font-size: 10vh;
 }
 
 
@@ -297,10 +297,27 @@ background-image: url("data:image/svg+xml,%3Csvg width='120' height='150' viewBo
 
 
 
-/*
-@media only screen and (min-device-width: 1000px){
-    body {
-        background-image: url(multimedia/images/background2.jpg);
-        background-size: cover; 
-    }
+
+@media only screen and (max-device-width: 980px){
+/*About me*/
+.about-me .icons .icon-box{
+    width: 15vh;
+}
+
+.icons .iconify{
+    font-size: 8vh;
+}
+/*Projects*/
+.cert-title{
+
+    font-size: 30px;
+
+}
+.project-menu .iconify{
+    font-size: 15px;
+    margin: 0 2vh 0;
+}
+
+
+
 }
