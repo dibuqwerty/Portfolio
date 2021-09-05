@@ -303,21 +303,27 @@
 .about-me .icons .icon-box{
     width: 15vh;
 }
-
+.perfil{
+    width:80%;
+}
 .icons .iconify{
     font-size: 8vh;
 }
 /*Projects*/
 .cert-title{
 
-    font-size: 30px;
+    font-size: 20px;
 
 }
 .project-menu .iconify{
     font-size: 15px;
     margin: 0 2vh 0;
 }
+.projects{
+     margin-left: 0;
+     margin-right: 0;
 
+}
 
 
 }
