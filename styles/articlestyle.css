@@ -336,5 +336,8 @@
     height: 50vh;
     width: 100%;
 }
+.cert-img .img-box h3{
+    margin-top:0;
+}
 
 }
