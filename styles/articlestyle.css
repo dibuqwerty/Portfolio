@@ -315,9 +315,11 @@
 }
 
 .perfil h2{
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 0;
 }
+
+
 /*Projects*/
 .cert-title{
 
@@ -331,8 +333,19 @@
 .projects{
      margin-left: 0;
      margin-right: 0;
-
 }
+
+.img-cont2 .img-box,
+.img-cont .img-box{
+    margin: 30px;
+    min-width: 200px;
+    height: 320px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.3),
+                -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+
 /*CERTIFICADOS*/
 
 .cert-img .img-box > a {
