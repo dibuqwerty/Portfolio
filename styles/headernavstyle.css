@@ -123,7 +123,7 @@ nav ul li a:hover{
 @media only screen and (max-device-width: 980px){
 
   .cover{
-    font-size: 30px;
+    font-size: 20px;
   }
   nav ul {
     display: flex;
