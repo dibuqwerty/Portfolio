@@ -321,11 +321,11 @@
 
 
 /*Projects*/
-.cert-title{
-
+.project-title{
     font-size: 20px;
-
 }
+
+
 .project-menu .iconify{
     font-size: 15px;
     margin: 0 2vh 0;
@@ -347,7 +347,9 @@
     border-radius: 15px;
 }
 /*CERTIFICADOS*/
-
+.cert-title{
+    font-size: 20px;
+}
 .cert-img .img-box > a {
     
     height: 50vh;
