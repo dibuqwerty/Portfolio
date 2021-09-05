@@ -324,6 +324,17 @@
      margin-right: 0;
 
 }
+/*CERTIFICADOS*/
 
+.cert-img .img-box img{
+    width: 35vw;
+    height: 279px;
+}
+
+.cert-img .img-box > a {
+    
+    height: 50vh;
+    width: 100%;
+}
 
 }
