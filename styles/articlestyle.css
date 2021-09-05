@@ -326,11 +326,6 @@
 }
 /*CERTIFICADOS*/
 
-.cert-img .img-box img{
-    width: 35vw;
-    height: 279px;
-}
-
 .cert-img .img-box > a {
     
     height: 50vh;
@@ -338,7 +333,7 @@
 }
 .cert-img .img-box h3{
     margin-top:0;
-    display: none;
+   /* display: none;*/
 }
 
 }
