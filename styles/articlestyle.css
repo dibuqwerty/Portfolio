@@ -386,9 +386,21 @@ font-size: 12px;
 .cert-title{
     font-size: 20px;
 }
+.cert-img{
+padding: 0;
+}
+.cert-img .img-box{
+    width: 30vw;
+    border: 2px solid;
+    margin: 2vh 4vh 2vh;
+}
+.cert-img .img-box img{
+    width: 100%;
+    height: 100px;
+}
+
 .cert-img .img-box > a {
-    
-    height: 50vh;
+    height: 20vh;
     width: 100%;
 }
 .cert-img .img-box h3{
