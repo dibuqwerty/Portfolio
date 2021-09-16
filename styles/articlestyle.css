@@ -12,13 +12,13 @@
 
 /*KNOWLEDGE*/
 .knowledge{
-    color: rgb(0, 0, 0);
+    color: --var(--blackish-color);
     background-color: rgba(255, 255, 255, 1);
 }
 #nombre {
     text-align: center;
     font-size: 50px;
-    padding: 8vh 5vh 5vh;
+    padding: 8vh 5vh 4vh;
 }
 .about-me{
     display: flex;
@@ -26,12 +26,14 @@
 }
 .perfil{
     align-self: center;
-    width:60%;
+    width:70%;
     margin: 0 5% 0;
     padding: 5vh;
 }
 
 .perfil h2{
+    line-height: 35px;
+    font-family: "Poppins", sans-serif;
     text-align: justify;
     margin-bottom: 4rem;
 }
@@ -43,12 +45,14 @@
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    width:60%;
+    width:70%;
     margin-bottom: 18vh;
 }
 .about-me .icons .icon-box{
-    width: 20vh;
+    font-family: "Poppins", sans-serif;
+    width: 10vw;
     margin-bottom: 5vh;
+   padding: 0 2vw 0;
 }
 
 .icons .iconify{
@@ -299,6 +303,9 @@
 
 
 @media only screen and (max-device-width: 980px){
+
+
+
 /*About me*/
 .about-me .icons .icon-box{
     width: 15vh;

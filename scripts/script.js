@@ -1,6 +1,5 @@
 
 
-
 //COVER
 
 const topmenu = document.getElementById("top-nav-menu");
@@ -23,7 +22,6 @@ topmenu.addEventListener("click", () =>{
     navstatus = 0;
   }
 })
-
 
 
 
