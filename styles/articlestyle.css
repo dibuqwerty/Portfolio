@@ -410,6 +410,11 @@ padding: 0;
     margin-top:0;
     display: none;
 }
+.cert-img  .img-box > a > svg,
+.cert-img  .img-box > a > svg > rect {
+  width: 0;
+  height: 0;
+}
 .cert-img .img-box > a:hover > svg > rect {
     transition:none;
     animation: none;
