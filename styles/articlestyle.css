@@ -383,6 +383,9 @@ font-size: 12px;
     font-size: 10px;
     }
 /*CERTIFICADOS*/
+.certificates{
+    margin-bottom: 10vh;
+}
 .cert-title{
     font-size: 20px;
 }
