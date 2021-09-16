@@ -73,7 +73,7 @@
 }
 .project-title{
      text-align: center;
-     font-size: 3rem;
+     font-size: 35px;
      padding: 3vh 0 5vh;
      align-self: center;
 }
@@ -111,8 +111,8 @@
     margin: 30px;
     padding: 0;
     position: relative;
-    min-width: 320px;
-    height: 440px;
+    min-width: 20vw;
+    height: 60vh;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
                 inset -5px -5px 15px rgba(255, 255, 255, 0.1),
                 5px 5px 15px rgba(0, 0, 0, 0.3),
@@ -317,15 +317,34 @@
     font-size: 8vh;
 }
 #nombre {
+    
     font-size: 20px;
     padding-bottom: 0;
 }
 
 .perfil h2{
-    font-size: 15px;
+    line-height:20px;
+    font-size: 12px;
     margin-bottom: 0;
 }
 
+.about-me .icons{
+    width:80%;
+    margin-bottom: 18vh;
+}
+.about-me .icons .icon-box{
+    width: 20vw;
+    margin-bottom: 5vh;
+   padding: 0 0 0;
+}
+
+.icons .iconify{
+    font-size: 6vh;
+}
+
+.about-me .icons .icon-box h3{
+font-size: 10px;
+}
 
 /*Projects*/
 .project-title{
