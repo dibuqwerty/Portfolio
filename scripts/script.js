@@ -133,7 +133,7 @@ drpbtn.addEventListener("mouseout", () => {
   drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
 });
   
-if (navspan.style.transform == "scaleY(1)") {
+if (navspan.style.transform = "scaleY(1)") {
   drpbtn.addEventListener("click", () => {
     console.log("click");
     navspan.style.transform = "scaleY(0)";
