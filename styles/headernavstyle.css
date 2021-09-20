@@ -121,12 +121,14 @@ nav ul li a:hover{
 /*Hidden menu*/
 #top-nav-menu{
   display: none;
+
 }
 
 
 @media only screen and (max-device-width: 980px){
 
   .cover{
+    height: 97vh;
     font-size: 12px;
   }
   nav ul {
@@ -134,11 +136,9 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .scrollDown{
-  display: block;
+  display:block;
 }
-nav ul li{
-  min-width: 5%;
-}
+
 #top-nav-options{
   display: none;
   transform: scaleY(0);
@@ -146,7 +146,8 @@ nav ul li{
   transform-origin: top;
 }
 #top-nav-menu{
-  padding: 3.5vh 0 3.5vh;
+  padding: 2vh 0 2vh;
   display: flex;
 }
+
 }

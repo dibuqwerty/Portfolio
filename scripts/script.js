@@ -100,7 +100,7 @@ print.addEventListener("click", () =>{
 //ASIDE NAV ANIMATIONS//
 window.onscroll = () => {
     let scroll = document.documentElement.scrollTop;
-    if (scroll > 600) {
+    if (scroll > 500) {
       document.getElementById("dropdwn").style.transform = "scale(1)";
       console.log('aside nav showed');
     } else {
