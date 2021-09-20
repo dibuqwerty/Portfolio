@@ -110,6 +110,7 @@ nav ul li a:hover{
   text-decoration: none;
   color: white;
   background-color: var(--greenish-color);
+  cursor: pointer;
 }
 
 .nav_active {

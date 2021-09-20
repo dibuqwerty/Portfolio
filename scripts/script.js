@@ -124,6 +124,11 @@ document.querySelector(".dropdown-content").addEventListener("mouseout", () => {
   document.getElementById("drop-icon").style.transform = "rotate(0deg)";
   document.querySelector(".dropbtn").style.animation = "corner-reverse 0.15s normal 0.3s both";
 });
+document.querySelector(".dropbtn").addEventListener("click", () => {
+  document.getElementById("span").style.transform = "scaleY(0)";
+  document.getElementById("drop-icon").style.transform = "rotate(0deg)";
+  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.15s normal 0.3s both";
+});
 document.querySelector(".dropbtn").addEventListener("mouseout", () => {
   document.getElementById("span").style.transform = "scaleY(0)";
   document.getElementById("drop-icon").style.transform = "rotate(0deg)";
