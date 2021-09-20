@@ -113,7 +113,9 @@ nav ul li a:hover{
   background-color: var(--greenish-color);
   cursor: pointer;
 }
-
+.nav{
+  background-color: var(--blackish-color);
+}
 .nav_active {
     background-color: var(--greenish-color);
 } 
@@ -149,5 +151,7 @@ nav ul li a:hover{
   padding: 2vh 0 2vh;
   display: flex;
 }
-
+nav ul li a {
+  padding: 2vh 0 2vh;
+}
 }

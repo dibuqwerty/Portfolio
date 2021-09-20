@@ -29,16 +29,58 @@ var typed = new Typed(".typing", {
   backSpeed: 60,
   loop: true
 });
-console.log(scrollY);
+
 //HEADER NAV//
 const about = document.getElementById("aboutme");
+const project = document.getElementById("project");
+const certificates = document.getElementById("certificates");
+const social = document.getElementById("social");
+//sections
+let projectsection = document.getElementById("projects");
+
 about.addEventListener("click", () =>{
+  let scrollpos = document.documentElement.scrollTop;
+
 scroll(0,599);
 });
-const projects = document.getElementById("projects");
-projects.addEventListener("click", () =>{
-scroll(0,1351);
+
+project.addEventListener("click", () =>{
+
+console.log("clickproject");
+granfunction();
 });
+
+function granfunction() {
+
+var clickproject = setInterval(function () {
+if(projectsection.getBoundingClientRect().top > 70){
+  let scrollpos = document.documentElement.scrollTop;
+let i=scrollpos;
+console.log("dentro del while");
+i=i+50;
+
+scroll(0,i);
+
+console.log(scrollpos);
+console.log(projectsection.getBoundingClientRect().top);
+};
+if(projectsection.getBoundingClientRect().top < 70){
+  console.log("chaointerval");
+  clearInterval(clickproject);
+};
+
+}, 80);
+
+};
+  
+
+
+
+
+
+
+
+
 
 //PROJECT GALLERY MENU//
 
@@ -94,24 +136,30 @@ print.addEventListener("click", () =>{
 
 
 
-
-
-
 //ASIDE NAV ANIMATIONS//
 window.onscroll = () => {
     let scroll = document.documentElement.scrollTop;
     if (scroll > 500) {
       document.getElementById("dropdwn").style.transform = "scale(1)";
-      console.log('aside nav showed');
+      
+      //console.log(scrollY);
     } else {
       document.getElementById("dropdwn").style.transform = "scale(0)";
-    }
+    };
+    
+    //NAVTOP
+    if (projectsection.getBoundingClientRect().top < 70 ){
+      about.className="nav";
+      project.className="nav_active";
+    };
+
+
+
 };
 //Aparición de las opciones//
 const navspan = document.getElementById("span");
 const navicon = document.getElementById("drop-icon");
 const drpbtn = document.querySelector(".dropbtn");
-const drpctn = document.querySelector(".dropdown-content");
 let asidenavstatus = 0;
 
 drpbtn.addEventListener("click", () => {
