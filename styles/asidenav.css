@@ -71,3 +71,14 @@
     border-top-right-radius:50% ;
   }
 }
+
+@media only screen and (max-device-width: 980px){
+  .dropdwn .iconify{
+    width:3vh;
+    height: 3vh;
+}
+.dropdwn {                       
+  bottom: 1rem;                               /*Posicionamiento en pantalla*/
+  right: 1rem;
+}
+}
