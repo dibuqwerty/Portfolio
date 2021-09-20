@@ -100,9 +100,9 @@ print.addEventListener("click", () =>{
 //ASIDE NAV ANIMATIONS//
 window.onscroll = () => {
     let scroll = document.documentElement.scrollTop;
-    if (scroll > 700) {
+    if (scroll > 600) {
       document.getElementById("dropdwn").style.transform = "scale(1)";
-      console.log('transform 1');
+      console.log('aside nav showed');
     } else {
       document.getElementById("dropdwn").style.transform = "scale(0)";
     }
@@ -145,7 +145,7 @@ if (navspan.style.transform = "scaleY(1)") {
 window.onload = () => {
     // SHOW ASIDE NAV
     document.getElementById("dropdwn").style.transform = "scale(0)";
-  
+    navspan.style.transform = "scaleY(0)";
     //LOADER ANIMATION
    /* document.getElementById("loading").style.opacity = "0";
     document.getElementById("loading").style.visibility = "hidden";*/
