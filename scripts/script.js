@@ -108,33 +108,39 @@ window.onscroll = () => {
     }
 };
 //Aparición de las opciones//
+const navspan = document.getElementById("span");
+const navicon = document.getElementById("drop-icon");
+const drpbtn = document.querySelector(".dropbtn");
 
-document.querySelector(".dropbtn").addEventListener("mouseover", () => {
-  document.getElementById("span").style.transform = "scaleY(1)";
-  document.getElementById("drop-icon").style.transform = "rotate(135deg)";
-  document.querySelector(".dropbtn").style.animation = "corner 0.15s normal both";
+drpbtn.addEventListener("mouseover", () => {
+  navspan.style.transform = "scaleY(1)";
+  navicon.style.transform = "rotate(135deg)";
+  drpbtn.style.animation = "corner 0.15s normal both";
 });
-document.querySelector(".dropdown-content").addEventListener("mouseover", () => {
-  document.getElementById("span").style.transform = "scaleY(1)";
-  document.getElementById("drop-icon").style.transform = "rotate(135deg)";
-  document.querySelector(".dropbtn").style.animation = "corner 0.15s normal both";
+drpbtn.addEventListener("mouseover", () => {
+  navspan.style.transform = "scaleY(1)";
+  navicon.style.transform = "rotate(135deg)";
+  drpbtn.style.animation = "corner 0.15s normal both";
 });
-document.querySelector(".dropdown-content").addEventListener("mouseout", () => {
-  document.getElementById("span").style.transform = "scaleY(0)";
-  document.getElementById("drop-icon").style.transform = "rotate(0deg)";
-  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.15s normal 0.3s both";
+drpbtn.addEventListener("mouseout", () => {
+  navspan.style.transform = "scaleY(0)";
+  navicon.style.transform = "rotate(0deg)";
+  drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
 });
-document.querySelector(".dropbtn").addEventListener("click", () => {
-  document.getElementById("span").style.transform = "scaleY(0)";
-  document.getElementById("drop-icon").style.transform = "rotate(0deg)";
-  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.15s normal 0.3s both";
-});
-document.querySelector(".dropbtn").addEventListener("mouseout", () => {
-  document.getElementById("span").style.transform = "scaleY(0)";
-  document.getElementById("drop-icon").style.transform = "rotate(0deg)";
-  document.querySelector(".dropbtn").style.animation = "corner-reverse 0.15s normal 0.3s both";
+drpbtn.addEventListener("mouseout", () => {
+  navspan.style.transform = "scaleY(0)";
+  navicon.style.transform = "rotate(0deg)";
+  drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
 });
   
+if (navspan.style.transform == "scaleY(1)") {
+  drpbtn.addEventListener("click", () => {
+    console.log("click");
+    navspan.style.transform = "scaleY(0)";
+    navicon.style.transform = "rotate(0deg)";
+    drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
+  });
+};
 
 window.onload = () => {
     // SHOW ASIDE NAV
