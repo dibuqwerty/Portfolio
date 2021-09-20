@@ -128,7 +128,7 @@ nav ul li a:hover{
 @media only screen and (max-device-width: 980px){
 
   .cover{
-    height: 97vh;
+    height: 95vh;
     font-size: 12px;
   }
   nav ul {
