@@ -127,6 +127,7 @@ nav ul li a:hover{
 
   .cover{
     font-size: 12px;
+    height: 95vh;
   }
   nav ul {
     display: flex;
