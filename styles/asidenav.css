@@ -23,6 +23,9 @@
     display: inline-block;
     border-radius: 50%;
 }
+.dropbtn-box :hover{
+  cursor: pointer;
+}
 .dropbtn .iconify{
     transition: transform 0.3s ease-in-out;     /*Animacion de giro del + */
 }
@@ -78,7 +81,7 @@
     height: 3vh;
 }
 .dropdwn {                       
-  bottom: 1rem;                               /*Posicionamiento en pantalla*/
-  right: 1rem;
+  bottom: 0.5rem;                               /*Posicionamiento en pantalla*/
+  right:0.5rem;
 }
 }

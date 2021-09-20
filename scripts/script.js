@@ -114,87 +114,24 @@ const drpbtn = document.querySelector(".dropbtn");
 const drpctn = document.querySelector(".dropdown-content");
 let asidenavstatus = 0;
 
-drpbtn.addEventListener("mouseover", () => {
-  navspan.style.transform = "scaleY(1)";
-  navicon.style.transform = "rotate(135deg)";
-  drpbtn.style.animation = "corner 0.15s normal both";
-  if (navspan.style.transform == "scaleY(0)"){
-  asidenavstatus=0;
-  console.log("be " + asidenavstatus);
-}
-else{
-  asidenavstatus=1;
-  console.log("be " + asidenavstatus);
-};
-});
-
-drpctn.addEventListener("mouseover", () => {
-  navspan.style.transform = "scaleY(1)";
-  navicon.style.transform = "rotate(135deg)";
-  drpbtn.style.animation = "corner 0.15s normal both";
-  if (navspan.style.transform == "scaleY(0)"){
-    asidenavstatus=0;
-    console.log("c " + asidenavstatus);
-  }
-  else{
-    asidenavstatus=1;
-    console.log("c " + asidenavstatus);
-  };
-});
-
-drpctn.addEventListener("mouseout", () => {
-  navspan.style.transform = "scaleY(0)";
-  navicon.style.transform = "rotate(0deg)";
-  drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
-  setTimeout(() => {
-  if (navspan.style.transform == "scaleY(0)"){
-    asidenavstatus=0;
-    console.log("c " + asidenavstatus);
-  }
-  else{
-    asidenavstatus=1;
-    console.log("c " + asidenavstatus);
-  };}, 200); 
-});
-
-drpbtn.addEventListener("mouseout", () => {
-  navspan.style.transform = "scaleY(0)";
-  navicon.style.transform = "rotate(0deg)";
-  drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
-  setTimeout(() => {
-  if (navspan.style.transform == "scaleY(0)"){
-    asidenavstatus=0;
-    console.log("bo " + asidenavstatus);
-  }
-  else{
-    asidenavstatus=1;
-    console.log("bo " + asidenavstatus);
-  };}, 200); 
-});
-
-
-
-/*
-if (asidenavstatus == 0) {
-  drpbtn.addEventListener("click", () => {
-      console.log("clicked");
-      navspan.style.transform = "scaleY(1)";
-  navicon.style.transform = "rotate(135deg)";
-  drpbtn.style.animation = "corner 0.15s normal both";
-
-});
-};
-*/
 drpbtn.addEventListener("click", () => {
-if (asidenavstatus == 1) {
-  
-      console.log("click");
-      navspan.style.transform = "scaleY(0)";
-      navicon.style.transform = "rotate(0deg)";
-      drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
+  if(asidenavstatus == 0){
+  navspan.style.transform = "scaleY(1)";
+  navicon.style.transform = "rotate(135deg)";
+  drpbtn.style.animation = "corner 0.15s normal both";
+  asidenavstatus =1;
+  }
+  else {
+    navspan.style.transform = "scaleY(0)";
+    navicon.style.transform = "rotate(0deg)";
+    drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
+    asidenavstatus=0;
+  };
 
-};
 });
+
+
+
 
 window.onload = () => {
     // SHOW ASIDE NAV
