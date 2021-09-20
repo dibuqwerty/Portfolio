@@ -52,6 +52,7 @@ header h1{
 /*--------Flecha-------------*/
 
   .scrollDown{
+    display: none;
     position: absolute;
     bottom: 1em;
     left: 50%;
@@ -132,7 +133,9 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
 }
-
+.scrollDown{
+  display: block;
+}
 nav ul li{
   min-width: 5%;
 }
