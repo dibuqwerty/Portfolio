@@ -127,11 +127,14 @@ nav ul li a:hover{
 
   .cover{
     font-size: 12px;
-    height: 95vh;
   }
   nav ul {
     display: flex;
     flex-direction: column;
+}
+
+nav ul li{
+  min-width: 5%;
 }
 #top-nav-options{
   display: none;
