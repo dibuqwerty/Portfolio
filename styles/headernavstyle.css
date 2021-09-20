@@ -23,7 +23,7 @@ html{
     color: white;
     position: relative;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
   } 
 
 .video {
@@ -94,6 +94,7 @@ nav ul {
 
 nav ul li{
     float: left;
+    min-width: 10%;
 }
 #top-nav-menu,
 nav ul li a {
@@ -101,7 +102,7 @@ nav ul li a {
     color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
-    padding: 3.5vh 5vh;
+    padding: 3.5vh 3vh;
     font-size: 3vh;
 }
 #top-nav-menu:hover,

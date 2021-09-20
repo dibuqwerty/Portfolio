@@ -22,8 +22,23 @@ topmenu.addEventListener("click", () =>{
     navstatus = 0;
   }
 })
-
-
+//COVER TYPING
+var typed = new Typed(".typing", {
+  strings: ["Programmer", "Mechatronic", "Developer","Musician", "Techies player"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
+console.log(scrollY);
+//HEADER NAV//
+const about = document.getElementById("aboutme");
+about.addEventListener("click", () =>{
+scroll(0,599);
+});
+const projects = document.getElementById("projects");
+projects.addEventListener("click", () =>{
+scroll(0,1351);
+});
 
 //PROJECT GALLERY MENU//
 
@@ -129,13 +144,7 @@ window.onload = () => {
 
 
 
-//COVER TYPE
-var typed = new Typed(".typing", {
-  strings: ["Programmer", "Mechatronic", "Developer","Musician", "Techies player"],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true
-});
+
 
 
 //SCROLLREVEAL

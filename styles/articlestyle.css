@@ -17,8 +17,8 @@
 }
 #nombre {
     text-align: center;
-    font-size: 50px;
-    padding: 8vh 5vh 4vh;
+    font-size: 30px;
+    padding: 8vh 5vh 0;
 }
 .about-me{
     display: flex;
@@ -34,8 +34,9 @@
 .perfil h2{
     line-height: 35px;
     font-family: "Poppins", sans-serif;
+    font-size: 15px;
     text-align: justify;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 /*ICONS*/
@@ -54,7 +55,9 @@
     margin-bottom: 5vh;
    padding: 0 2vw 0;
 }
-
+.about-me .icons .icon-box h3{
+    font-size: 15px;
+    }
 .icons .iconify{
     color: var(--greenish-color);
     font-size: 10vh;
@@ -73,7 +76,7 @@
 }
 .project-title{
      text-align: center;
-     font-size: 35px;
+     font-size: 20px;
      padding: 3vh 0 5vh;
      align-self: center;
 }
@@ -183,7 +186,7 @@
     height:10vh ;
 }
 .project-menu .iconify{
-    font-size: 5vh;
+    font-size: 3vh;
     margin: 0 2.5vh 0;
 }
 .project-menu .iconify:hover{
