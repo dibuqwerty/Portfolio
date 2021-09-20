@@ -134,12 +134,14 @@ drpbtn.addEventListener("mouseout", () => {
 });
   
 if (navspan.style.transform = "scaleY(1)") {
-  drpbtn.addEventListener("click", () => {
-    console.log("click");
-    navspan.style.transform = "scaleY(0)";
-    navicon.style.transform = "rotate(0deg)";
-    drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
-  });
+  setTimeout(() => {
+    drpbtn.addEventListener("click", () => {
+      console.log("click");
+      navspan.style.transform = "scaleY(0)";
+      navicon.style.transform = "rotate(0deg)";
+      drpbtn.style.animation = "corner-reverse 0.15s normal 0.3s both";
+    });
+  }, 100);
 };
 
 window.onload = () => {
