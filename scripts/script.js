@@ -33,48 +33,38 @@ var typed = new Typed(".typing", {
 //HEADER NAV//
 const about = document.getElementById("aboutme");
 const project = document.getElementById("project");
-const certificates = document.getElementById("certificates");
+const certificates = document.getElementById("certificate");
 const social = document.getElementById("social");
 //sections
-let projectsection = document.getElementById("projects");
+const aboutsection = document.getElementById("nombre");
+const projectsection = document.getElementById("projects");
+const certificatesection = document.getElementById("cert-title");
+const socialsection = document.getElementById("footer");
 
 about.addEventListener("click", () =>{
   let scrollpos = document.documentElement.scrollTop;
-
-scroll(0,599);
+  var inicioabout = scrollpos + aboutsection.getBoundingClientRect().top - 69;
+  scroll(0,inicioabout);
 });
 
 project.addEventListener("click", () =>{
-
-console.log("clickproject");
-granfunction();
+  let scrollpos = document.documentElement.scrollTop;
+  var inicioproject = scrollpos + projectsection.getBoundingClientRect().top - 69;
+  scroll(0,inicioproject);
 });
 
-function granfunction() {
-
-var clickproject = setInterval(function () {
-if(projectsection.getBoundingClientRect().top > 70){
+certificates.addEventListener("click", () =>{
   let scrollpos = document.documentElement.scrollTop;
-let i=scrollpos;
-console.log("dentro del while");
-i=i+50;
+  var iniciocertificate = scrollpos + certificatesection.getBoundingClientRect().top - 69;
+  scroll(0,iniciocertificate);
 
-scroll(0,i);
+});  
 
-console.log(scrollpos);
-console.log(projectsection.getBoundingClientRect().top);
-};
-if(projectsection.getBoundingClientRect().top < 70){
-  console.log("chaointerval");
-  clearInterval(clickproject);
-};
-
-}, 80);
-
-};
-  
-
-
+social.addEventListener("click", () =>{
+  let scrollpos = document.documentElement.scrollTop;
+  var iniciosocial = scrollpos + socialsection.getBoundingClientRect().top - 69;
+  scroll(0, iniciosocial);
+});
 
 
 
@@ -132,8 +122,11 @@ print.addEventListener("click", () =>{
   console.log(print);
 })
 
-
-
+//CERTIFICATES
+VanillaTilt.init(document.querySelectorAll(".cert-img .img-box"), {
+  max: 25,
+  speed: 400
+});
 
 
 //ASIDE NAV ANIMATIONS//
@@ -148,9 +141,31 @@ window.onscroll = () => {
     };
     
     //NAVTOP
-    if (projectsection.getBoundingClientRect().top < 70 ){
+    let inicioabout = scroll + aboutsection.getBoundingClientRect().top - 70;
+    let inicioproject = scroll + projectsection.getBoundingClientRect().top - 70;
+    let iniciocertificate = scroll + certificatesection.getBoundingClientRect().top - 70;
+    let iniciosocial = scroll + socialsection.getBoundingClientRect().top - 70;
+
+    if (scroll>=inicioabout && scroll< inicioproject){
+      console.log("estoy en about");
+      about.className="nav_active";
+      project.className="nav";
+      certificates.className="nav";
+      social.className="nav";
+    };
+    if (scroll>=inicioproject && scroll< iniciocertificate){
+      console.log("estoy en proyectos");
       about.className="nav";
       project.className="nav_active";
+      certificates.className="nav";
+      social.className="nav";
+    };
+    if (scroll>=iniciocertificate && scroll< iniciosocial){
+      console.log("estoy en proyectos");
+      about.className="nav";
+      project.className="nav";
+      certificates.className="nav_active";
+      social.className="nav";
     };
 
 

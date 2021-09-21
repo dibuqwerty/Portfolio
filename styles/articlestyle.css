@@ -214,91 +214,75 @@
 .certificates{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    background-color: white;
-    margin-bottom: 30vh;
+    background-color: var(--blackish-color);
 }
 .cert-title{
     text-align: center;
-    font-size: 50px;
+    font-size: 20px;
     padding: 3vh 0 5vh;
     align-self: center;
+    color: white;
 }
 
 /*IMAGES*/
 
 .cert-img{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 5% 0;
-    justify-content: center;
-}
-.cert-img .img-box{
-    width: 40vh;
-    margin: 2vh 2vh 2vh;
-}
-
-.cert-img .img-box img{
-    width: 35vh;
-    height: 279px;
-}
-
-.cert-img .img-box > a {
-    text-decoration: none;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-    height: 45vh;
-    width: 100%;
-    font-size: 20px;
-    color: var(--blackish-color);
-    font-weight: bolder;
-    transition: all 0.5s ease;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    flex-wrap: wrap;
+    z-index: 1;
 }
-
-.cert-img .img-box h3{
-    margin-top: 3vh;
+.cert-img .img-box{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
+.cert-img .img-box a{
+    text-decoration-style: none;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+.cert-img .img-box:hover a h3{
+transform: translateY(0px);
+opacity: 1;
+}    
+.cert-img .img-box:hover a img{
+    transform: scale(1.2);
+}   
 
+.cert-img .img-box img{
+    transform: scale(1);
+    transition: 0.5s;
+    width: 100%;
+}    
+.cert-img .img-box a h3{
 
-/*ANIMACION RECUADRO*/
-  .cert-img  .img-box > a > svg,
-  .cert-img  .img-box > a > svg > rect {
-    position: absolute;
-    width: 40vh;
-    height: 45vh;
-    fill: transparent;
-  }
-  
-  .cert-img .img-box > a:hover > svg > rect {
-    transition: all 0.3s ease;
-    transition-delay: 1.5s;
-    animation: strokeHover 1.5s normal both;
-  }
-
-  @keyframes strokeHover {
-    from {
-      stroke: var(--blackish-color);
-      stroke-width: 2;
-      stroke-dasharray: 0 85vh;
-    }
-    to {
-      stroke: var(--blackish-color);
-      stroke-width: 25;
-      stroke-dasharray: 85vh 0;
-      stroke-dashoffset: 0;
-    }
-  }
-
-
-
-
-
-
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10vh;
+}
 
 
 
@@ -306,7 +290,6 @@
 
 
 @media only screen and (max-device-width: 980px){
-
 
 
 /*About me*/
@@ -392,6 +375,7 @@ font-size: 12px;
 .cert-title{
     font-size: 20px;
 }
+/*
 .cert-img{
 padding: 0;
 }
@@ -422,4 +406,5 @@ padding: 0;
     transition:none;
     animation: none;
   }
+*/
 }
