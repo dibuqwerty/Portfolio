@@ -125,7 +125,9 @@ print.addEventListener("click", () =>{
 //CERTIFICATES
 VanillaTilt.init(document.querySelectorAll(".cert-img .img-box"), {
   max: 25,
-  speed: 400
+  speed: 400,
+  glare:true,
+  "max-glare":1,
 });
 
 
