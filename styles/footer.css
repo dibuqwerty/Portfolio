@@ -1,8 +1,117 @@
 #footer{
+    display: flex;
+    flex-direction: column;
     color: white;
-   text-align: center;
+    text-align: center;
     background: var(--greenish-color);
+    overflow: hidden;
 }
-#footer  h3{
-    padding-bottom: 500px;
+
+
+.top-footer{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 110vh;
+}
+
+.rightback{
+    position: absolute;
+    left: 75%;
+    width: 25%;
+    height: 14vw;
+    background-color:var(--blackish-color);
+}
+.leftback{
+    position: absolute;
+    width: 25%;
+    height: 14vw;
+    background-color: var(--blackish-color);
+}
+.left{
+    height: 13vw;
+    width: 25%;
+    background-color: var(--blackish-color);
+}
+.middle{
+    width: 50%;
+    height: 14vw;
+    background-color: var(--blackish-color);
+}
+.right{
+    height: 13vw;
+    width: 25%;
+    background-color: var(--blackish-color);
+}
+.footer-content{
+    color: var(--blackish-color);
+    padding-bottom: 10vh;
+    overflow: hidden;
+}
+.footer-circle{
+    background-color: var(--blackish-color);
+    position: fixed;
+    left: 36vw;
+    width: 30vw;
+    height: 30vw;
+    bottom: -15vw;
+    border-radius: 15vw;
+    transform: translateY(15vw);
+}
+@keyframes tuercaright {
+    0%{
+        transform: skewY(0);
+        height: 13vw;
+    }
+    100%{
+        transform: skewY(45deg);
+        height: 25vw;
+    }
+}
+@keyframes tuercaleft {
+    0%{
+        transform: skewY(0);
+        height: 13vw;
+    }
+    100%{
+        transform: skewY(-45deg);
+        height: 25vw;
+    }
+}
+@keyframes footercircle {
+    0%{
+        transform: translateY(15vw);
+    }
+    100%{
+        transform: translateY(0vw);
+    }
+}
+@keyframes tuercarightr {
+    0%{
+        transform: skewY(45deg);
+        height: 25vw;
+    } 
+    100%{
+        transform: skewY(0);
+        height: 13vw;
+    }
+}
+@keyframes tuercaleftr {
+    0%{
+        transform: skewY(-45deg);
+        height: 25vw;
+    }
+    100%{
+        transform: skewY(0deg);
+        height: 13vw;
+    }
+}
+@keyframes footercircler {
+    0%{
+        transform: translateY(0vw);
+    }
+    100%{
+        transform: translateY(20vw);
+    }
+
 }

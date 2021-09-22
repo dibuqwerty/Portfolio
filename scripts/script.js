@@ -169,7 +169,28 @@ window.onscroll = () => {
       certificates.className="nav_active";
       social.className="nav";
     };
-
+    if (scroll>=iniciosocial){
+      console.log("estoy en proyectos");
+      about.className="nav";
+      project.className="nav";
+      certificates.className="nav";
+      social.className="nav_active";
+    };
+    //Footer
+    const footertop = document.querySelector(".top-footer");
+    const right = document.querySelector(".right");
+    const left = document.querySelector(".left");
+    const footercircle = document.querySelector(".footer-circle");
+    if (scroll>=iniciosocial-40){
+      right.style.animation = "tuercaright 1.5s normal both";
+      left.style.animation = "tuercaleft 1.5s normal both";
+      footercircle.style.animation = "footercircle 1.5s normal both";
+    }
+    else{
+      right.style.animation = "tuercarightr 1.5s normal both";
+      left.style.animation = "tuercaleftr 1.5s normal both";
+      footercircle.style.animation = "footercircler 1.5s normal both";
+    };
 
 
 };
