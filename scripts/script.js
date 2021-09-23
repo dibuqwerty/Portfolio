@@ -122,6 +122,17 @@ print.addEventListener("click", () =>{
   console.log(print);
 })
 
+
+
+
+
+
+
+
+
+
+
+
 //CERTIFICATES
 VanillaTilt.init(document.querySelectorAll(".cert-img .img-box"), {
   max: 25,
