@@ -390,9 +390,12 @@ font-size: 12px;
 .cert-img .img-box a h3{
     transform: translateY(0px);
     opacity: 1;
-    }    
-    .cert-img .img-box a img{
-        transform: scale(1.2);
-    }  
+}    
+.cert-img .img-box a img{
+    transform: scale(1.2);
+}  
+.cert-line{
+    display: none;
+}
 
 }

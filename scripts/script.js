@@ -193,15 +193,17 @@ window.onscroll = () => {
     const footermenu = document.querySelector(".footer-menu");
     const footerinner = document.querySelector(".footer-innermenu");
     
+
+    
     if (scroll>=iniciosocial){
       footercircle.style.display = "block";
       footermenu.style.display = "block";
       right.style.animation = "tuercaright 1s normal both";
       left.style.animation = "tuercaleft 1s normal both";
-      footercircle.style.animation = "footercircle 1s normal both";
-      footermenu.style.animation = "footermenu 1s normal both";
-      footerinner.style.animation = "footerinner 1.2s ease-out normal both";
-      document.getElementById("dropdwn").style.animation = "asidebot 1s normal both";
+      footercircle.style.animation = "footercircle 1s 1s normal both";
+      footermenu.style.animation = "footermenu 1s 1s normal both";
+      footerinner.style.animation = "footerinner 1s ease-out 1s normal both";
+      document.getElementById("dropdwn").style.animation = "asidebot 1s linear normal both";
       console.log(footermenu);
 
       footerstatus = 1;
@@ -213,7 +215,7 @@ window.onscroll = () => {
       footercircle.style.animation = "footercircler 1s normal both";
       footermenu.style.animation = "footermenur 1s normal both";
       footerinner.style.animation = "footerinnerr 1s ease-out normal both";
-      document.getElementById("dropdwn").style.animation = "asidebotr 1s normal both";
+      document.getElementById("dropdwn").style.animation = "asidebotr 1s 1s normal both";
     };
 
 

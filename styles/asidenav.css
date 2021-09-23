@@ -79,12 +79,12 @@
     bottom: 2rem;
   }
   100%{
-    bottom: -10rem;
+    bottom: -5rem;
   }
 }
 @keyframes asidebotr {
   0%{
-    bottom: -10rem;
+    bottom: -5rem;
   }
   100%{
     bottom: 2rem;
