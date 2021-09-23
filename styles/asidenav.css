@@ -74,7 +74,22 @@
     border-top-right-radius:50% ;
   }
 }
-
+@keyframes asidebot {
+  0%{
+    bottom: 2rem;
+  }
+  100%{
+    bottom: -10rem;
+  }
+}
+@keyframes asidebotr {
+  0%{
+    bottom: -10rem;
+  }
+  100%{
+    bottom: 2rem;
+  }
+}
 @media only screen and (max-device-width: 980px){
   .dropdwn .iconify{
     width:3vh;

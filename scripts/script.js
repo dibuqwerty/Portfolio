@@ -130,7 +130,7 @@ VanillaTilt.init(document.querySelectorAll(".cert-img .img-box"), {
   "max-glare":1,
 });
 
-
+var footerstatus = 0;
 //ASIDE NAV ANIMATIONS//
 window.onscroll = () => {
     let scroll = document.documentElement.scrollTop;
@@ -149,28 +149,26 @@ window.onscroll = () => {
     let iniciosocial = scroll + socialsection.getBoundingClientRect().top - 70;
 
     if (scroll>=inicioabout && scroll< inicioproject){
-      console.log("estoy en about");
       about.className="nav_active";
       project.className="nav";
       certificates.className="nav";
       social.className="nav";
     };
     if (scroll>=inicioproject && scroll< iniciocertificate){
-      console.log("estoy en proyectos");
+
       about.className="nav";
       project.className="nav_active";
       certificates.className="nav";
       social.className="nav";
     };
     if (scroll>=iniciocertificate && scroll< iniciosocial){
-      console.log("estoy en proyectos");
+
       about.className="nav";
       project.className="nav";
       certificates.className="nav_active";
       social.className="nav";
     };
     if (scroll>=iniciosocial){
-      console.log("estoy en proyectos");
       about.className="nav";
       project.className="nav";
       certificates.className="nav";
@@ -181,15 +179,30 @@ window.onscroll = () => {
     const right = document.querySelector(".right");
     const left = document.querySelector(".left");
     const footercircle = document.querySelector(".footer-circle");
-    if (scroll>=iniciosocial-40){
-      right.style.animation = "tuercaright 1.5s normal both";
-      left.style.animation = "tuercaleft 1.5s normal both";
-      footercircle.style.animation = "footercircle 1.5s normal both";
-    }
-    else{
-      right.style.animation = "tuercarightr 1.5s normal both";
-      left.style.animation = "tuercaleftr 1.5s normal both";
-      footercircle.style.animation = "footercircler 1.5s normal both";
+    const footermenu = document.querySelector(".footer-menu");
+    const footerinner = document.querySelector(".footer-innermenu");
+    
+    if (scroll>=iniciosocial){
+      footercircle.style.display = "block";
+      footermenu.style.display = "block";
+      right.style.animation = "tuercaright 1s normal both";
+      left.style.animation = "tuercaleft 1s normal both";
+      footercircle.style.animation = "footercircle 1s normal both";
+      footermenu.style.animation = "footermenu 1s normal both";
+      footerinner.style.animation = "footerinner 1.2s ease-out normal both";
+      document.getElementById("dropdwn").style.animation = "asidebot 1s normal both";
+      console.log(footermenu);
+
+      footerstatus = 1;
+    };
+
+    if (scroll<iniciosocial && footerstatus == 1){
+      right.style.animation = "tuercarightr 1s normal both";
+      left.style.animation = "tuercaleftr 1s normal both";
+      footercircle.style.animation = "footercircler 1s normal both";
+      footermenu.style.animation = "footermenur 1s normal both";
+      footerinner.style.animation = "footerinnerr 1s ease-out normal both";
+      document.getElementById("dropdwn").style.animation = "asidebotr 1s normal both";
     };
 
 
@@ -231,6 +244,7 @@ window.onload = () => {
 };
 
 
+//Footer
 
 
 
