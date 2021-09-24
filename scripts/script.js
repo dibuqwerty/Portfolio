@@ -76,16 +76,50 @@ social.addEventListener("click", () =>{
 
 var cont = document.querySelector(".img-cont");
 var cont2 = document.querySelector(".img-cont2");
+var cont3 = document.querySelector(".img-cont3");
+var cont4 = document.querySelector(".img-cont4");
+var cont5 = document.querySelector(".img-cont5");
 var web = document.getElementById("web-box");
+var elect = document.getElementById("electronic-box");
 var print = document.getElementById("3d-box");
+var cad = document.getElementById("cad-box");
+var plant = document.getElementById("plant-box");
 var allmenu = document.querySelector(".project-menu .icon-box");
 
-web.addEventListener("click", () =>{
-
+function allcontoff (){
+  cont.style.transform = "scale(0)";
+  setTimeout(() => {
+    cont.style.display = "none";
+  }, 400);
   cont2.style.transform = "scale(0)";
   setTimeout(() => {
     cont2.style.display = "none";
   }, 400);
+  cont3.style.transform = "scale(0)";
+  setTimeout(() => {
+    cont3.style.display = "none";
+  }, 400);
+  cont4.style.transform = "scale(0)";
+  setTimeout(() => {
+    cont4.style.display = "none";
+  }, 400);
+  cont5.style.transform = "scale(0)";
+  setTimeout(() => {
+    cont5.style.display = "none";
+  }, 400);
+};
+function allclassoff(){
+  web.className= "pro";
+  elect.className= "pro";
+  print.className= "pro";
+  cad.className= "pro";
+  plant.className= "pro";
+};
+
+web.addEventListener("click", () =>{
+
+  allcontoff();
+
   setTimeout(() => {
   cont.style.display = "flex";
   }, 400);
@@ -93,38 +127,79 @@ web.addEventListener("click", () =>{
     cont.style.transform = "scale(1)";
   }, 500); 
 
-  console.log('clicked');
-  web.className= "pro-active";
-  print.className= "pro";
-  
-  console.log(web);
-  console.log(print);
+  allclassoff();
 
+  web.className= "pro-active";
+  
 })
 
-print.addEventListener("click", () =>{
+elect.addEventListener("click", () =>{
 
-  cont.style.transform = "scale(0)";
-  setTimeout(() => {
-    cont.style.display = "none";
-  }, 400);
+  allcontoff();
+
   setTimeout(() => {
   cont2.style.display = "flex";
-}, 400);
+  }, 400);
   setTimeout(() => {
     cont2.style.transform = "scale(1)";
   }, 500); 
  
+  allclassoff();
 
-  web.className= "pro";
-  print.className= "pro-active"; 
-  console.log(web);
-  console.log(print);
+  elect.className= "pro-active"; 
+ 
 })
 
+print.addEventListener("click", () =>{
 
+  allcontoff();
 
+  setTimeout(() => {
+  cont3.style.display = "flex";
+  }, 400);
+  setTimeout(() => {
+    cont3.style.transform = "scale(1)";
+  }, 500); 
+ 
+  allclassoff();
 
+  print.className= "pro-active"; 
+ 
+})
+
+cad.addEventListener("click", () =>{
+
+  allcontoff();
+
+  setTimeout(() => {
+  cont4.style.display = "flex";
+  }, 400);
+  setTimeout(() => {
+    cont4.style.transform = "scale(1)";
+  }, 500); 
+ 
+  allclassoff();
+
+  cad.className= "pro-active"; 
+ 
+})
+
+plant.addEventListener("click", () =>{
+
+  allcontoff();
+
+  setTimeout(() => {
+  cont5.style.display = "flex";
+  }, 400);
+  setTimeout(() => {
+    cont5.style.transform = "scale(1)";
+  }, 500); 
+ 
+  allclassoff();
+
+  plant.className= "pro-active"; 
+ 
+})
 
 
 

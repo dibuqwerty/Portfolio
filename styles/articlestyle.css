@@ -99,6 +99,9 @@
     justify-content: center;
 }
 
+.img-cont5,
+.img-cont4,
+.img-cont3,
 .img-cont2{
     transform: scale(0);
     transform-origin: center;
@@ -108,7 +111,9 @@
     justify-content: center;
 }
 
-
+.img-cont5 .img-box,
+.img-cont4 .img-box,
+.img-cont3 .img-box,
 .img-cont2 .img-box,
 .img-cont .img-box{
     margin: 30px;
