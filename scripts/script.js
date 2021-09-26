@@ -277,7 +277,7 @@ window.onscroll = () => {
       left.style.animation = "tuercaleft 1s normal both";
       footercircle.style.animation = "footercircle 1s 1s normal both";
       footermenu.style.animation = "footermenu 1s 1s normal both";
-      footerinner.style.animation = "footerinner 1s ease-out 1s normal both";
+      footerinner.style.animation = "footerinner 1s 1s normal both";
       document.getElementById("dropdwn").style.animation = "asidebot 1s linear normal both";
       console.log(footermenu);
 
@@ -289,7 +289,7 @@ window.onscroll = () => {
       left.style.animation = "tuercaleftr 1s normal both";
       footercircle.style.animation = "footercircler 1s normal both";
       footermenu.style.animation = "footermenur 1s normal both";
-      footerinner.style.animation = "footerinnerr 1s ease-out normal both";
+      footerinner.style.animation = "footerinnerr 1s normal both";
       document.getElementById("dropdwn").style.animation = "asidebotr 1s 1s normal both";
     };
 
