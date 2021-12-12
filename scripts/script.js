@@ -270,7 +270,7 @@ window.onscroll = () => {
     
 
     
-    if (scroll>=iniciosocial){
+    if (scroll>=iniciosocial+120){
       footercircle.style.display = "block";
       footermenu.style.display = "block";
       right.style.animation = "tuercaright 1s normal both";
@@ -284,7 +284,7 @@ window.onscroll = () => {
       footerstatus = 1;
     };
 
-    if (scroll<iniciosocial && footerstatus == 1){
+    if (scroll<iniciosocial+120 && footerstatus == 1){
       right.style.animation = "tuercarightr 1s normal both";
       left.style.animation = "tuercaleftr 1s normal both";
       footercircle.style.animation = "footercircler 1s normal both";
