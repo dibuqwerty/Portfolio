@@ -79,11 +79,12 @@ var cont2 = document.querySelector(".img-cont2");
 var cont3 = document.querySelector(".img-cont3");
 var cont4 = document.querySelector(".img-cont4");
 var cont5 = document.querySelector(".img-cont5");
+
 var web = document.getElementById("web-box");
 var elect = document.getElementById("electronic-box");
 var print = document.getElementById("3d-box");
-var cad = document.getElementById("cad-box");
-var plant = document.getElementById("plant-box");
+var app = document.getElementById("app-box");
+
 var allmenu = document.querySelector(".project-menu .icon-box");
 
 function allcontoff (){
@@ -112,8 +113,7 @@ function allclassoff(){
   web.className= "pro";
   elect.className= "pro";
   print.className= "pro";
-  cad.className= "pro";
-  plant.className= "pro";
+  app.className= "pro";
 };
 
 web.addEventListener("click", () =>{
@@ -167,7 +167,7 @@ print.addEventListener("click", () =>{
  
 })
 
-cad.addEventListener("click", () =>{
+app.addEventListener("click", () =>{
 
   allcontoff();
 
@@ -180,30 +180,9 @@ cad.addEventListener("click", () =>{
  
   allclassoff();
 
-  cad.className= "pro-active"; 
+  app.className= "pro-active"; 
  
 })
-
-plant.addEventListener("click", () =>{
-
-  allcontoff();
-
-  setTimeout(() => {
-  cont5.style.display = "flex";
-  }, 400);
-  setTimeout(() => {
-    cont5.style.transform = "scale(1)";
-  }, 500); 
- 
-  allclassoff();
-
-  plant.className= "pro-active"; 
- 
-})
-
-
-
-
 
 
 
